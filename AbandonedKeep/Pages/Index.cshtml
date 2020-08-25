@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Abandon Keep!</h1>
+    <div id="app1">
+        <div class="card text-white bg-dark mb-3">
+            <div class="card-header">
+                The Abandoned Keep
+            </div>
+            <div class="card-body success">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textarea">
+                            </label>
+                            <div class="col-md-12">
+                                <textarea class="form-control" cols="140" id="outputText" name="textarea" onkeypress="return false;" rows="5">
+                                        
+                                    </textarea>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="commandText">
+                                Command
+                            </label>
+                            <div class="col-md-12">
+                                <input class="form-control input-md" id="commandText" name="commandText" placeholder="enter text here" type="text">
+                                </input>
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="btnGo">
+                            </label>
+                            <div class="col-md-12">
+                                <button class="btn btn-success" id="btnGo" name="btnGo" type="button" onclick="app.clicked()">
+                                    Go!
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
